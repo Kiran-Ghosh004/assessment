@@ -1,3 +1,9 @@
+// Sort Character by frequency
+// time complexity: O(n log n)
+// space complexity: O(n)
+
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -5,11 +11,11 @@ string frequencySort(string s) {
     unordered_map<char,int> freq;
     for (char c : s) freq[c]++;
 
-    vector<pair<int,char>> arr;  // (frequency, character)
+    vector<pair<int,char>> arr;  
     for (auto &p : freq) arr.push_back({p.second, p.first});
 
-    sort(arr.begin(), arr.end());      // ascending by frequency
-    reverse(arr.begin(), arr.end());   // make it descending
+    sort(arr.begin(), arr.end());      
+    reverse(arr.begin(), arr.end());  
 
     string result = "";
     for (auto &p : arr) {
