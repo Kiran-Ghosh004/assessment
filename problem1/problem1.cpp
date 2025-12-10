@@ -1,3 +1,7 @@
+// product except self problem implementation in C++
+// time complexity: O(n)
+// space complexity: O(1) (excluding the output array)
+
 #include <bits/stdc++.h>
 using namespace std;
 
